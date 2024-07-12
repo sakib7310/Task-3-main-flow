@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUNFLOWER BY SAKIB</title>
+    <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+<header class="header">
+    <nav>
+      <div class="logo">SUNFLOWER</div>
+      <div class="dropdown">
+        <button onclick="toggleMenu()" class="dropbtn">Menu</button>
+         <div id="myDropdown" class="dropdown-content">
+        <a href="index.html">Home</a> <a href="about.html">About</a> <a href="contact.html">Contact</a>
+         </div>
+     </div>
+    </nav>
+</header>
+<main class="contact-content">
+      <section class="contact">
+         <h2><i>Contact Us</i></h2> 
+        <div class="contact-fill">
+         <form id="myForm">
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" name="name" required>
+            <span class="error" id="nameError"></span>
+
+            <label for="phonenumber"><b>Phone No.:</b></label>
+            <input type="phonenumber" id="phonenumber" name="phonenumber" required>
+            <span class="error" id="phonenumberError"></span>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
+
+           
+            <button type="submit">Submit</button>
+          </form> 
+        </div>
+       </section>
+    </main>
+    <footer class="footer">
+       <span>  @Sunflower</span>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

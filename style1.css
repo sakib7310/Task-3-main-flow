@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+.header {
+    background: orange;
+    padding: 15px;
+}
+nav {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  
+}
+/* Style the button */
+.dropbtn {
+    background-color: green;
+    color: white;
+    padding: 14px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Container needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: orange;
+}
+
+.show {
+    display: block;
+}
+.sun {
+  background: #fdcc04;
+}
+.sun-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 95vh;
+  padding: 3rem 20px;
+}
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #000;
+  padding: 0 20px; 
+}
+
+.column-left h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.column-left p {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.start-button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  color: #fdcc04;
+  background: #000;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
+.column-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 70px;
+}
+
+.sun-image {
+  width: 100%;
+  height: auto;
+}
+.about-content {
+    padding: 5% 5%;
+    color: black;
+}
+.about h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: Bahnschrift;
+    color: black;
+}
+
+.about p {
+    font-size: 1.5rem;
+}
+.about li strong  {
+    color: black;
+   font-size: 1.3rem;
+}
+.about li {
+    font-size: 1.1rem;
+}
+.contact-content {
+    padding: 5% 5%;
+    color: black;
+}
+.contact h2{
+    text-align:center;
+    font-size: 3rem;
+    color: black;
+    font-family: Algerian;
+}
+.contact-fill {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+.footer {
+    background: orange;
+    color: black;
+    text-align: center;
+    font-size: 1.25rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+@media only screen and (max-width: 768px) {
+  .logo {
+        font-size: 1.6rem;
+    }
+   nav {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+   .dropbtn {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+   .dropdown-content a {
+        font-size: 0.9rem;
+    }
+  .sun-container {
+    grid-template-columns:  1fr 1fr; 
+    height: 95vh; 
+    padding: 3rem 10px; 
+  }
+
+  .column-left h1 {
+    font-size: 2rem;
+  }
+
+  .column-left p {
+    font-size: 1rem;
+  }
+
+  .button-container {
+    margin-top: 10px;
+  }
+  
+  .sun-image {
+    width: 160%;
+    height: auto;
+  }
+  .about h2 {
+    font-size: 2rem;
+   }
+  .about p {
+     font-size: 1.2rem;
+  }
+  .about li strong  {
+   font-size: 1rem;
+  }
+  .about li {
+    font-size: 1rem;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+   
+    .logo {
+        font-size: 1.3rem;
+    }
+    .header {
+        padding: 10px;
+    }
+    .dropbtn {
+        padding: 8px;
+        font-size: 12px;
+    }
+   .dropdown-content a {
+        font-size: 12px;
+    }
+   .column-left {
+        padding: 0 9px; 
+        margin-right: 10%;
+   }
+   .column-left h1 {
+       font-size: 1rem;
+   }
+   .column-left p {
+       font-size: 0.7rem;
+   }
+   .column-right {
+       padding: 0 10px;
+   }
+   .sun-image {
+       width: 130%;
+       height: auto;
+   }
+   .start-button {
+     font-size: 0.5rem;
+    }
+  
+   .about h2 {
+       font-size: 1.7rem;
+   }   
+   .about p {
+       font-size: 1rem;
+   }
+   .about li strong  {
+    
+       font-size: 0.8rem;
+   }
+   .about li {
+       font-size: 0.8rem;
+   }
+   .contact h2 {
+        font-size: 1.6rem;
+    }
+   .footer {
+        font-size: 0.9rem;
+    }
+}
